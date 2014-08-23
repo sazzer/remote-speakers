@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "author": "Graham Cox <graham@grahamcox.co.uk>",
   "dependencies": {
+    "restify": "^2.8.2"
   },
   "devDependencies": {
     "vows": "~0.7.0"
