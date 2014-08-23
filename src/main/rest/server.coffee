@@ -1,5 +1,6 @@
 restify = require("restify")
 url = require("url")
+Q = require("q")
 
 # Wrapper around the REST server
 class RestServer
@@ -12,11 +13,13 @@ class RestServer
         
     # Actually start the server
     start: () ->
+        deferred = Q.defer()
         self = this
         @server.listen(@port, () ->
             parsedUrl = url.parse(self.server.url)
             self.port = parsedUrl.port
-            console.log("Server %s listening at %s", self.server.name, parsedUrl.port)
+            deferred.resolve(self.port)
         )
+        return deferred.promise
 
 module.exports = RestServer
