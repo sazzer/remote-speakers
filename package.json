@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "author": "Graham Cox <graham@grahamcox.co.uk>",
   "dependencies": {
+    "coffee-script": "^1.7.1",
     "restify": "^2.8.2"
   },
   "devDependencies": {
