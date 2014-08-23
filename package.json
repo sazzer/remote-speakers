@@ -1,0 +1,20 @@
+{
+  "name": "remote-speakers",
+  "description": "Remote Speakers",
+  "version": "0.0.1",
+  "author": "Graham Cox <graham@grahamcox.co.uk>",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "vows": "~0.7.0"
+  },
+  "bin": {},
+  "scripts": {
+    "test": "vows --spec"
+  },
+  "licenses": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sazzer/remote-speakers.git"
+  }
+}
